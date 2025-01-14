@@ -67,7 +67,7 @@ li::marker {
 }
 
 li {
-  padding: 0.5rem 0;
+  padding: 0.5rem 24px;
 }
 
 .prepTime {
