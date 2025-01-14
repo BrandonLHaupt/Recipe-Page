@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap&family=Outfit:wght@400;600;700");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Young Serif", monospace;
+  font-family: Outfit, monospace;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10rem;
+  padding: 8rem;
 }
 
 /* Container */
@@ -29,32 +29,108 @@ body {
 
 img {
   object-fit: cover;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 hr {
-    border: 1px solid #e4ded8;
-    border-radius: 5px;
+  border: 1px solid #e4ded8;
+  border-radius: 5px;
 }
 
 h1 {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
+  font-family: "Young Serif";
+}
+
+h2 {
+  color: #854632;
+  font-size: 2rem;
+  font-family: "Young Serif";
+  font-weight: 500;
+  padding-bottom: 1rem;
 }
 
 p {
-    font-weight: 200;
-    font-size: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+  font-weight: 400;
+  color: #302d2c;
+}
+
+li::marker {
+  color: #854632;
+}
+
+li {
+  padding: 0.5rem 0;
 }
 
 .prepTime {
-    padding: 3rem;
-    background-color: #fff5fa;
-    border-radius: .5rem;
+  padding: 3rem;
+  background-color: #fff5fa;
+  border-radius: 0.5rem;
+}
+
+.prepTime li::marker {
+  color: #7b284f;
+  font-size: 0.9rem;
+}
+
+.prepTime ol::marker {
+  padding-left: 2rem;
 }
 
 .prepTime h3 {
-    font-size: 1.5rem;
-    font-family: Outfit;
-    font-weight: 400;
-    color: #7b284f;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #7b284f;
+}
+
+.ingredients ul {
+  list-style-type: square;
+}
+
+.ingredients li::marker {
+  padding-left: 10rem;
+}
+
+.nutrition table {
+  width: 100%;
+}
+
+.nutrition td {
+  border-top: 1px solid #e4ded8;
+}
+
+/*! Mobile */
+
+@media (max-width: 1440px) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    width: 100vw;
+    padding: 0;
+  }
+
+  p,
+  h1,
+  .prepTime,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    padding: 0 2rem;
+  }
+
+  img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
