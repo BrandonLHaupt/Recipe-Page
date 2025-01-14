@@ -55,8 +55,7 @@ p {
   font-size: 1rem;
 }
 
-ul,
-ol {
+ul, ol {
   list-style-position: inside;
   font-weight: 400;
   color: #302d2c;
@@ -67,7 +66,7 @@ li::marker {
 }
 
 li {
-  padding: 0.5rem 24px;
+  padding: 0.5rem;
 }
 
 .prepTime {
