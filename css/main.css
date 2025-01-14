@@ -122,7 +122,7 @@ th{
     padding-left: 20px;  
 }
 
-tr::nth-child(3n-1){
+tr:nth-child(4n-1){
     border-bottom: none !important;
 }
 
