@@ -99,14 +99,35 @@ li {
   padding-left: 10rem;
 }
 
-.nutrition table {
+table {
   width: 100%;
   padding-top: 1.5rem;
 }
 
-.nutrition td {
-  border-bottom: 1px solid #e4ded8;
+th,td{
+    text-align: center;
+    font-family: Outfit;
+    padding: 15px;
+    border-bottom: 1px solid #d0c9c2;
 }
+
+td{
+    font-size: 18px;
+    text-align: left;
+    color: #854632; 
+}
+
+th{
+    text-align: left;
+    padding-left: 20px;  
+}
+
+tr::nth-child(3n-1){
+    border-bottom: none !important;
+}
+
+
+
 
 /*! Mobile */
 
